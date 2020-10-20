@@ -1,0 +1,145 @@
+* {
+    margin:0px ; 
+    padding: 0px ; 
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+main {
+    background-color:#fcd76994;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.87) ; 
+    width : 98% ; 
+    margin: auto;
+}
+
+/* ------------------------------------------------------style section artiste---------------------------------------------------------------*/
+
+.contenu_bloc_artiste {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenu_bloc_artiste > div {
+    width: 50% ; 
+}
+
+.image_artiste img {
+    width: 100%;
+}
+
+.rs ul {
+    display: flex ; 
+    align-items: center;
+    justify-content: center;
+}
+
+.description_artiste {
+    padding: 30px ;
+}
+
+.rs a {
+    color: black;
+    padding: 10px;
+    margin: 0px 10px ; 
+}
+
+.rs a:hover {
+    transition: .3s ; 
+}
+
+.rs ul a:nth-child(1):hover {
+    color: red;
+}
+
+.rs ul a:nth-child(2):hover {
+    color: yellow;
+}
+
+.rs ul a:nth-child(3):hover {
+    color: green;
+}
+
+.texte p {
+    line-height: 30px;
+    padding: 20px 0px;
+}
+
+.texte h1 {
+    font-size : 4em ; 
+}
+
+
+
+/* ------------------------------------------------------style section album---------------------------------------------------------------*/
+
+
+.contenu_bloc_album {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenu_bloc_album > div {
+    width:50% ; 
+}
+
+
+.image_album div {
+    width : 60% ; 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.music {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.music div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music p {
+    width: 50%;
+    margin: 0;
+}
+
+audio {
+    margin: 15px;
+    display: inline-block;
+}
+
+video {
+    object-fit: cover;
+    transition: .2s;
+
+}
+
+video:hover {
+    transform: scale(1.2);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.titre {
+    display: flex;
+    justify-content: center;
+}
+
+.titre h3 {
+    font-size: 1.5em;
+    padding: 20px;
+    color: #BF3636;
+}
+
+
