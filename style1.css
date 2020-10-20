@@ -1,21 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bitter:wght@300;500;700;900&family=Montserrat:wght@300;700;900&display=swap');
+
 * {
     margin:0px ; 
     padding: 0px ; 
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Bitter', serif;
 }
 
-main {
-    background-color:#fcd76994;
+#naaman {
+    background-color: #e1493be1;
 }
 
-section {
-    background-color: rgba(255, 255, 255, 0.87) ; 
-    width : 98% ; 
-    margin: auto;
+#biga {
+    background-color: #fedf32b9;
 }
 
+#soja {
+    background-color: #5ac158ad;
+}
 /* ------------------------------------------------------style section artiste---------------------------------------------------------------*/
 
 .contenu_bloc_artiste {
@@ -25,7 +30,7 @@ section {
 }
 
 .contenu_bloc_artiste > div {
-    width: 50% ; 
+    width: 50% ;
 }
 
 .image_artiste img {
@@ -40,6 +45,11 @@ section {
 
 .description_artiste {
     padding: 30px ;
+}
+
+.description_artiste p,.description_artiste h2 {
+    width: 80% ; 
+    margin: auto ; 
 }
 
 .rs a {
@@ -71,6 +81,29 @@ section {
 
 .texte h1 {
     font-size : 4em ; 
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.05em;
+    width: 100% ;
+    text-align: center;
+}
+
+.texte h1::after {
+    content: "" ; 
+    display: block;
+    height : 5px ;
+    width: 20%;
+    margin: auto;
+    background-color:#fedf32b9;
+    border-radius: 2em;
+    padding: 2px;
+}
+
+#biga .texte h1::after {
+    background-color: #e1493be1;
+}
+
+.texte h2 {
+    padding-top: 20px;
 }
 
 
@@ -97,11 +130,25 @@ section {
     align-items: center;
 }
 
+.image_album div img {
+    width: 100%;
+}
+
 
 .music {
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.774);
+    width: 70% ; 
+    margin:  20px auto;
+    border-radius: 2em;
+    padding : 15px ;
+    box-shadow: 10px 10px #fedf32b9;
+}
+
+#biga .music {
+    box-shadow: 10px 10px #e1493be1;
 }
 .music div {
     display: flex;
@@ -139,7 +186,74 @@ video:hover {
 .titre h3 {
     font-size: 1.5em;
     padding: 20px;
-    color: #BF3636;
+    color:#fedf32b9;
+    font-weight: 900;
 }
+
+#biga .titre h3 {
+    color: #e1493be1 ;
+}
+
+#menu_deroulant {
+    width: 10%;
+    position: fixed;
+    top : 0; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-transform: uppercase;
+    height : 100vh ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(-110px);
+    transition: .3s;
+}
+
+#menu_deroulant:hover {
+    transform: translate(0px);
+    transition: .3s;
+}
+
+#menu_deroulant ul {
+    list-style-type: none;
+}
+
+#menu_deroulant a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.deroulant {
+    margin: 40px 0px;
+}
+
+#menu_deroulant li {
+    text-align: center;
+    padding: 10px ; 
+}
+
+.sous {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden; 
+    transition: all .5s;
+    
+}
+
+#menu_deroulant > ul li:hover .sous{
+    opacity: 1;
+    max-height: 15em;
+}
+
+#menu_deroulant li li {
+    overflow: hidden;
+    transition: all .5s;
+    border-radius:0;
+    background: #444;
+    border:none;
+    margin:0
+ }
 
 
