@@ -12,6 +12,10 @@
     scroll-behavior: smooth;
 }
 
+#body_reggae {
+    background-color: #5ac158;
+}
+
 #naaman {
     background-color: #e1493bc9;
 }
@@ -21,7 +25,7 @@
 }
 
 #soja {
-    background-color: #5ac158ad;
+    background-color: #5ac158;
 }
 
 /* ------------------------------------------------------style section artiste---------------------------------------------------------------*/
@@ -326,7 +330,7 @@ video:hover {
 
 #footer {
     width: 100%;
-    background-color: rgba(177, 177, 196, 0.5);
+    background-color: rgb(177, 177, 196);
     color: rgb(133, 133, 133);
     text-decoration: none;
     text-align: center;
