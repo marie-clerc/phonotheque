@@ -1,18 +1,191 @@
 * {
     margin: 0px;
-    Padding: 0px;
+    padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
+/******Header*********************************************************************/
+#menu_deroulant {
+    width: 10%;
+    position: fixed;
+    top : 0; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.473);
+    text-transform: uppercase;
+    height : 100vh ; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    transform: translate(-110px);
+    transition: .3s;
+    font-weight: 700;
+}
+
+#menu_deroulant:hover {
+    transform: translate(0px);
+    transition: .3s;
+    cursor: pointer;
+}
+
+#menu_deroulant ul {
+    list-style-type: none;
+}
+
+#menu_deroulant a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.deroulant {
+    margin: 40px 0px;
+}
+
+#menu_deroulant li {
+    text-align: center;
+    padding: 10px ; 
+}
+
+.sous {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden; 
+    transition: all .5s;
+    font-weight: 300;
+}
+
+#menu_deroulant > ul li:hover .sous{
+    opacity: 1;
+    max-height: 15em;
+}
+
+#menu_deroulant li li {
+    overflow: hidden;
+    transition: all .5s;
+    border-radius:0;
+    background: #444;
+    border:none;
+    margin:0
+}
+
+/*******fin du header**************************************************************************/
+
+/******MAIN ACCUEIL*****************************************************************************/
+#phonotheque {
+    margin-top: 1em;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 150px;
+    text-align: center;
+}
+.genres {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10em;
+}
+
+.card {
+    width: 28%;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.45);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.cardimg {
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+
+
+.cardimg img {
+    width: 100%;
+    background-color: rgb(245, 247, 250);
+    background-size: cover;
+    background-position: center bottom;
+    transition:0.7s;
+}
+.cardimg img:hover {
+    transform : scale(1.1);
+}
+
+.player {
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+}
+
+.player figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(32, 36, 41);
+    text-align: center;
+}
+.genre {
+    margin-top: 1em;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1em;
+}
+.genre a {
+    color: black;
+}
+.genre a:hover {
+    text-decoration: underline;
+}
+
+
+/******FIN MAIN ACCUEIL************************************************************************/
+
 
 /******MAIN DU STYLE 2 KPOP********************************************************************/
 #mainstyle2 {
     background-color: white;
+    font-family: 'Quicksand', sans-serif;
 }
 
+/*div de background entre chaque artiste*/
+#fond1 {
+    background-image: url("images/kpop/btsfond1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#fond2 {
+    background-image: url("images/kpop/mmmfond2.png");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+#fond3 {
+    background-image: url("images/kpop/twicefond3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#titrekpop {
+    width: 100%;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 100px;
+    font-size: 72px;
+    color: black;
+}
+
+/*amination des fleches */
+
 #arrowAnim {
-    width: 100vw;
-    height: 135vh;
+    width: 100%;
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,30 +233,7 @@
     100% { opacity:0; transform: translateX(-15vw); }	
   }
 
-
-/*div entre chaque artiste*/
-#fond1 {
-    background-image: url("images/kpop/btsfond1.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-}
-#fond2 {
-    background-image: url("images/kpop/mmmfond2.png");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-}
-#fond3 {
-    background-image: url("images/kpop/twicefond3.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-attachment: fixed;
-}
-
+/*fin animation des fleches*/
 
 /*container par artiste*/
 .container {
@@ -108,7 +258,7 @@
     display: flex;
     align-items: center;
 }
-p {
+.particle {
     border: #2265b3 1px solid;
     border-top-left-radius: 17px;
     background-color: #2265b3;
@@ -126,27 +276,9 @@ p {
     #154478 8px 8px,
     #154478 9px 9px;
 }
-.lecteurAlbum {
-    display: flex;
-}
-.lecteur {
-    width: 50%;
-    display: grid;
-    place-items: center;
-}
-.album {
-    background-color: black;
-    width: 50%;
-    display: grid;
-    place-items: center;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 
-/*réseaux sociaux*/
+/*réseaux sociaux des arstites*/
 .socialmedia {
     width: 100%;
     display: flex;
@@ -197,31 +329,47 @@ i {
     color: #96983b;
     transform: rotate(360deg);
 }
+
+/*lecteur et alubum*/
+.lecteurAlbum {
+    display: flex;
+}
+.lecteur {
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+.album {
+    background-color: black;
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*******************FIN DE MAIN DU STYLE 2 KPOP**************************************************/
 
 /*footer */
-
-footer {
-    bottom: 0;
-    padding-top: 35px;
-    width: fit-content;
-    margin: auto;
-}
-
-#footer a {
-    display: block;
+#footer {
+    width: 100%;
+    background-color: rgba(177, 177, 196, 0.5);
+    color: rgb(133, 133, 133);
     text-decoration: none;
+    text-align: center;
+    margin-top: 4em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    line-height: 3;
+    font-family: 'Quicksand', sans-serif;
 }
-
-#footer a:hover {
+#footer #liens a {
+    margin-right: 4em;
+    margin-left: 4em;
+    color: rgb(133, 133, 133);
+}
+#footer #liens a:hover {
     text-decoration: underline;
-}
-
-#liens {
-    display: flex;
-    margin: 4em;
-}
-
-#liens a  {
-    margin-right: 2em;
 }

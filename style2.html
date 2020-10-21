@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/kpop/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/kpop/favicon-32x32.png">
@@ -17,8 +17,51 @@
     <title>K-pop</title>
 </head>
 <body> 
+    <!--header------------------------------------------------------------->
+    <header>
+        <nav id="menu_deroulant">
+            <ul>
+                <li><a href="phonotheque.html">Accueil </a>
+    
+                <li class="deroulant"><a href="style1.html">Reggae </a>
+                    <ul class="sous">
+                        <li><a href="style1.html#link_naaman"> Naâman</a></li>    
+                        <li><a href="style1.html#link_biga"> Biga Ranx</a></li>    
+                        <li><a href="style1.html#link_soja"> SOJA </a></li>
+                    </ul>
+                </li>
+    
+                <li class="deroulant"><a href="style3.html">Rap </a>
+                    <ul class="sous">
+                        <li><a href="style3.html#"> Damso</a></li>    
+                        <li><a href="style3.html#"> Vald</a></li>    
+                        <li><a href="style3.html#"> Odezenne </a></li>
+                    </ul>
+                </li>
+    
+                <li class="deroulant"><a href="style2.html">K-Pop </a>
+                    <ul class="sous">
+                        <li><a href="#link_bts"> BTS</a></li>    
+                        <li><a href="#link_moomoo"> MAMAMOO</a></li>    
+                        <li><a href="#link_twice"> Twice</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+    
+    </header>
+
+
+<!--MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-MAIN-->
+
         <main id="mainstyle2">
+
+    <!--div de background------------------------------------->
             <div id="fond1">
+                <div id="titrekpop"><h1>K-POP</h1></div>
+                
+                <!--fleche animation https://codepen.io/RenMan/pen/jwWKMb -->
                 <div id="arrowAnim">
                     <div class="arrowSliding">
                     <div class="arrow"></div>
@@ -30,11 +73,22 @@
                     <div class="arrow"></div>
                     </div>
                 </div>
+
             </div>
-                    <section class="container">
+    <!-- fin div de background-------------------------------->
+
+
+    <!--ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1--->
+    <!--ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1--->
+    <!--ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1-ARTISTE 1--->
+
+
+                    <section class="container" id="link_bts">
                         <section class="imgdescription">
+    <!--image de l'arstiste------------------------------------>
                             <img src="images/kpop/artisteBTS.jpg" alt="bts">
                             <article class="article">
+    <!--Nom de l'atiste-------------------------------------->
                                 <section id="titrebts">
                                     <h3>BTS - 방탄소년단 </h3>
                                     <!---------------------logo svg de bts--------------------------->
@@ -45,27 +99,30 @@
                                     </div>
                                     <!-------------------------fin du logo--------------------------->
                                 </section>
-                                <p>BTS, acronyme de Bangtan Sonyeondan ou «Beyond the Scene», est un boyband sud-coréen qui 
+    <!--Description de l'artiste------------------------------->
+                                <p class="particle">BTS, acronyme de Bangtan Sonyeondan ou «Beyond the Scene», est un boyband sud-coréen qui 
                                     a capturé le cœur de millions de fans dans le monde depuis leurs débuts en juin 2013. Les 
                                     membres de BTS sont RM, Jin, SUGA, j-Hope, Jimin, V et JungKook. Reconnu par sa musique 
                                     authentique et autoproduite et ses performances de premier ordre jusqu'à la façon dont il 
                                     interagit avec ses fans, le groupe s'est imposé comme des superstars mondiales battant 
                                     d'innombrables records du monde. BTS a été nommé dans le Times 100: les personnes les plus influentes de 2019.</p>
                                 <div class="socialmedia">
-                                    <a href="https://www.facebook.com/bangtan.official/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/bts.bighitofficial/?hl=fr"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/bts_twt"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.tiktok.com/@bts_official_bighit?lang=fr"><i class="fab fa-tiktok"></i></a>
-                                    <a href="https://www.youtube.com/user/ibighit"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"><i class="fab fa-spotify"></i></a>
-                                    <a href="https://soundcloud.com/bangtan"><i class="fab fa-soundcloud"></i></a>
-                                    <a href="https://weverse.io/bts/feed"><i class="fas fa-comments"></i></a>
-                                    <a href="https://channels.vlive.tv/fe619/home"><i class="fab fa-angellist"></i></a>
-                                    <a href="https://ibighit.com/bts/eng/"><i class="fas fa-globe"></i></a>
+    <!--liens vers les réseaux sociaux...----------------------->
+                                    <a target="_blank" href="https://www.facebook.com/bangtan.official/"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/bts.bighitofficial/?hl=fr"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://twitter.com/bts_twt"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.tiktok.com/@bts_official_bighit?lang=fr"><i class="fab fa-tiktok"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/user/ibighit"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"><i class="fab fa-spotify"></i></a>
+                                    <a target="_blank" href="https://soundcloud.com/bangtan"><i class="fab fa-soundcloud"></i></a>
+                                    <a target="_blank" href="https://weverse.io/bts/feed"><i class="fas fa-comments"></i></a>
+                                    <a target="_blank" href="https://channels.vlive.tv/fe619/home"><i class="fab fa-angellist"></i></a>
+                                    <a target="_blank" href="https://ibighit.com/bts/eng/"><i class="fas fa-globe"></i></a>
                                 </div>
                             </article>
                         </section>
                         <section class="lecteurAlbum">
+    <!--Lecteur avec plusieurs titre --------------------------->
                             <section class="lecteur">
                                 <figure>
                                     <figcaption>Listen Dynamite:</figcaption>
@@ -105,37 +162,52 @@
                                 </figure>
                             </section>
                             <section class="album">
+    <!--Pochetter de l'album------------------------------------>
                                 <img src="images/kpop/dynamiteAlbum.jpg" alt="pochette de l'album">
                             </section>
                         </section>
                     </section>
                     
-                    <div id="fond2"></div>
-                    <section class="container">
+                    
+    <!-- div de background------------------------------------>
+                     <div id="fond2"></div>
+                    
+    <!-- fin div de background-------------------------------->
+
+
+    <!--ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-->
+    <!--ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-->
+    <!--ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-ARTISTE 2-->
+
+
+                    <section class="container" id="link_moomoo">
                         <section class="imgdescription">
+    <!--image de l'arstiste------------------------------------>
                             <img src="images/kpop/artisteMAMAMOO.jpeg" alt="mamamoo">
                             <article class="article">
-                                <h3>MAMAMOO - 마마무 </h3><!-------------------------fin du logo--------------------------->
-                                <p>MAMAMOO est un girlband sud-coréen de la Rainbow Bridge World composé de 4 membres: Solar, Moon Byul, Whee In et Hwa Sa.
+    <!--Nom de l'atiste-------------------------------------->
+                                <h3>MAMAMOO - 마마무 </h3>
+    <!--Description de l'artiste------------------------------->
+                                <p class="particle">MAMAMOO est un girlband sud-coréen de la Rainbow Bridge World composé de 4 membres: Solar, Moon Byul, Whee In et Hwa Sa.
                                     Elles sont reconnues pour leur style retro, jazz, R&B et leur performances vocales impressionnantes.</p>
-                                    <blockquote class="blockquote">
-                                        If I dont fit the beauty standarts .. I'll set my own standarts
-                                        <footer class="blockquote-footer">Hwasa lors d'un <cite title="Source Title">concert</cite></footer>
+                                    <blockquote cite="https://www.facebook.com/MamamooGlobal/posts/if-i-dont-fit-todays-beauty-standards-ill-become-a-new-different-standard-hwasa/536266120596495/">
+                                        <p>If I dont fit the beauty standards .. I'll set my own standards</p>
+                                        <footer class="citation">—Hwasa, <cite>during a concert.</cite></footer>
                                     </blockquote>
-                                
-                                
                                 <div class="socialmedia">
-                                    <a href="https://www.facebook.com/RBW.MAMAMOO/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/mamamoo_official/?hl=fr"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/rbw_mamamoo"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.tiktok.com/@official_mamamoo?lang=fr"><i class="fab fa-tiktok"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCuhAUMLzJxlP1W7mEk0_6lA"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://open.spotify.com/artist/0XATRDCYuuGhk0oE7C0o5G"><i class="fab fa-spotify"></i></a>
-                                    <a href="https://channels.vlive.tv/fcd4b/home"><i class="fab fa-angellist"></i></a>
+    <!--liens vers les réseaux sociaux...----------------------->
+                                    <a target="_blank" href="https://www.facebook.com/RBW.MAMAMOO/"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/mamamoo_official/?hl=fr"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://twitter.com/rbw_mamamoo"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.tiktok.com/@official_mamamoo?lang=fr"><i class="fab fa-tiktok"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCuhAUMLzJxlP1W7mEk0_6lA"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" href="https://open.spotify.com/artist/0XATRDCYuuGhk0oE7C0o5G"><i class="fab fa-spotify"></i></a>
+                                    <a target="_blank" href="https://channels.vlive.tv/fcd4b/home"><i class="fab fa-angellist"></i></a>
                                 </div>
                             </article>
                         </section>
                         <section class="lecteurAlbum">
+    <!--Lecteur avec plusieurs titre --------------------------->
                             <section class="lecteur">
                                 <figure>
                                     <figcaption>Listen Hip:</figcaption>
@@ -175,75 +247,91 @@
                                 </figure>
                             </section>
                             <section class="album">
+    <!--Pochetter de l'album------------------------------------>
                                 <img src="images/kpop/mamamooAlbum.jpg" alt="pochette de l'album">
                             </section>
                         </section>
                     </section>
-                    <div id="fond3"></div>
-                    <section class="container">
+                    
+                    
+    <!-- div de background------------------------------------>
+                     <div id="fond3"></div>
+                    
+    <!-- fin div de background-------------------------------->
+
+
+    <!--ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3--->
+    <!--ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3--->
+    <!--ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3-ARTISTE 3--->
+
+
+                    <section class="container" id="link_twice">
                         <section class="imgdescription">
+    <!--image de l'arstiste------------------------------------>
                             <img src="images/kpop/artisteTWICE.jpg" alt="twice">
                             <article class="article">
+    <!--Nom de l'atiste-------------------------------------->
                                 <h3>Twice - 트와이스 </h3>
-                                <p>Twice est un groupe féminin de la jyp entertainement compposé de 9 membres choisis entre 16 trainees 
+    <!--Description de l'artiste------------------------------->
+                                <p class="particle">Twice est un groupe féminin de la jyp entertainement compposé de 9 membres choisis entre 16 trainees 
                                     lors de l'émission "sixteen" diffusée sur Mnet en 2015. C'est le 7 juillet que la composition finale 
                                     est révélée. le nom du groupe signifie que les membres du groupe sont capable de nous épater deux fois,
                                     à travers nos yeux et nos oreilles. les Twice début officièlement le 20 octobre 2015. Aujourd'hui elles font parties
                                     des girlbands les plus populaires et enchaînent les victoires lors des emissions musicales.</p>
                                 <div class="socialmedia">
-                                    <a href="https://www.facebook.com/bangtan.official/"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.instagram.com/bts.bighitofficial/?hl=fr"><i class="fab fa-instagram"></i></a>
-                                    <a href="https://twitter.com/bts_twt"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://www.tiktok.com/@bts_official_bighit?lang=fr"><i class="fab fa-tiktok"></i></a>
-                                    <a href="https://www.youtube.com/user/ibighit"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"><i class="fab fa-spotify"></i></a>
-                                    <a href="https://soundcloud.com/bangtan"><i class="fab fa-soundcloud"></i></a>
-                                    <a href="https://weverse.io/bts/feed"><i class="fas fa-comments"></i></a>
-                                    <a href="https://channels.vlive.tv/fe619/home"><i class="fab fa-angellist"></i></a>
-                                    <a href="https://ibighit.com/bts/eng/"><i class="fas fa-globe"></i></a>
+<!--liens vers les réseaux sociaux...----------------------->
+                                    <a target="_blank" href="https://www.facebook.com/JYPETWICE/"><i class="fab fa-facebook-f"></i></a>
+                                    <a target="_blank" href="https://www.instagram.com/twicetagram/?hl=fr"><i class="fab fa-instagram"></i></a>
+                                    <a target="_blank" href="https://twitter.com/jypetwice"><i class="fab fa-twitter"></i></a>
+                                    <a target="_blank" href="https://www.tiktok.com/@twice_tiktok_official?lang=fr"><i class="fab fa-tiktok"></i></a>
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCaO6TYtlC8U5ttz62hTrZgg"><i class="fab fa-youtube"></i></a>
+                                    <a target="_blank" href="https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"><i class="fab fa-spotify"></i></a>
+                                    <a target="_blank" href="https://channels.vlive.tv/EDBF"><i class="fab fa-angellist"></i></a>
                                 </div>
                             </article>
                         </section>
                         <section class="lecteurAlbum">
+<!--Lecteur avec plusieurs titre --------------------------->
                             <section class="lecteur">
                                 <figure>
-                                    <figcaption>Listen Dynamite:</figcaption>
+                                    <figcaption>Listen Feel Special:</figcaption>
                                     <audio
                                         controls
-                                        src="audio/kpop/bts-dynamite-official-mv.mp3">
+                                        src="audio/kpop/twice-feel-special-mv.mp3">
                                             Your browser does not support the
                                             <code>audio</code> element.
                                     </audio>
                                 </figure>
                                 <figure>
-                                    <figcaption>Listen Black Swan:</figcaption>
+                                    <figcaption>Listen Fancy:</figcaption>
                                     <audio
                                         controls
-                                        src="audio/kpop/bts-black-swan-official-mv.mp3">
+                                        src="audio/kpop/twice-fancy-mv.mp3">
                                             Your browser does not support the
                                             <code>audio</code> element.
                                     </audio>
                                 </figure>
                                 <figure>
-                                    <figcaption>Listen Friends:</figcaption>
+                                    <figcaption>Listen Dance the Night Away:</figcaption>
                                     <audio
                                         controls
-                                        src="audio/kpop/friends.mp3">
+                                        src="audio/kpop/twice-dance-the-night-away-mv.mp3">
                                             Your browser does not support the
                                             <code>audio</code> element.
                                     </audio>
                                 </figure>
                                 <figure>
-                                    <figcaption>Listen Ugh!:</figcaption>
+                                    <figcaption>Listen Yes or Yes:</figcaption>
                                     <audio
                                         controls
-                                        src="audio/kpop/ugh.mp3">
+                                        src="audio/kpop/twice-yes-or-yes-mv.mp3">
                                             Your browser does not support the
                                             <code>audio</code> element.
                                     </audio>
                                 </figure>
                             </section>
                             <section class="album">
+<!--Pochetter de l'album------------------------------------>
                                 <img src="images/kpop/twicealbum.jpg" alt="pochette de l'album">
                             </section>
                         </section>
@@ -251,13 +339,13 @@
 
         </main>
         <footer id="footer">
-    
-            <div id="liens">
+            <section id="liens">
                 <a href="phonotheque.html">Accueil</a>
                 <a href="style3.html">Rap</a>
                 <a href="style1.html">Reggae</a>
-                <a  href="style2.html">K-pop</a>
-            </div>
+                <a href="style2.html">K-pop</a>
+            </section>
+            <p>Réalisé par Marie Clerc & Baptiste Gauthier</p>
         </footer>
 </body>
 </html>
