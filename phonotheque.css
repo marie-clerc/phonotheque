@@ -144,7 +144,7 @@
     transition: .3s ;  
 }
 
-.rs a:hover {
+.rs i:hover {
     transition: .3s ; 
 }
 
@@ -153,15 +153,15 @@
     transition: .3s;
 }
 
-#reggae .rs ul a:nth-child(1):hover {
+#reggae .rs .fa-instagram:hover {
     color: red;
 }
 
-#reggae .rs ul a:nth-child(2):hover {
+#reggae .rs .fa-facebook:hover {
     color: yellow;
 }
 
-#reggae .rs ul a:nth-child(3):hover {
+#reggae .rs .fa-twitter:hover {
     color: green;
 }
 
