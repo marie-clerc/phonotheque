@@ -583,43 +583,43 @@ video:hover {
     color:rgb(29, 28, 28);
     transition: color 0.4s, transform 0.7s;
 }
-.fa-facebook-f:hover {
+.socialmedia .fa-facebook-f:hover {
     color: #1778F2;
     transform: rotate(360deg);
 }
-.fa-instagram:hover {
+.socialmedia .fa-instagram:hover {
     color: #DD2A7B;
     transform: rotate(360deg);
 }
-.fa-twitter:hover {
+.socialmedia .fa-twitter:hover {
     color: #00acee;
     transform: rotate(360deg);
 }
-.fa-tiktok:hover {
+.socialmedia .fa-tiktok:hover {
     color:#69C9D0;
     transform: rotate(360deg);
 }
-.fa-youtube:hover {
+.socialmedia .fa-youtube:hover {
     color: #cd201F;
     transform: rotate(360deg);
 }
-.fa-spotify:hover {
+.socialmedia .fa-spotify:hover {
     color: #1ED761;
     transform: rotate(360deg);
 }
-.fa-soundcloud:hover {
+.socialmedia .fa-soundcloud:hover {
     color: #FF5836;
     transform: rotate(360deg);
 }
-.fa-comments:hover {
+.socialmedia .fa-comments:hover {
     color: #0BE6C1;
     transform: rotate(360deg);
 }
-.fa-angellist:hover {
+.socialmedia .fa-angellist:hover {
     color: #54F7FF;
     transform: rotate(360deg);
 }
-.fa-globe:hover {
+.socialmedia .fa-globe:hover {
     color: #96983b;
     transform: rotate(360deg);
 }
